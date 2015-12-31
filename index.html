@@ -38,12 +38,16 @@
             ga('create','UA-57081235-6','auto');ga('send','pageview');
         </script>
         <script type="text/javascript">
+            var player_has_been_arested_for_felony_charges = true;
             var taunts = [
                 "21-28",
                 "SORRY",
                 "BAYLOR LOST",
                 "GO FROGS"
             ];
+            if (player_has_been_arested_for_felony_charges === true) {
+                taunts.push("Go Boykin")
+            }
             $("#main-title").text(taunts[parseInt(Math.random() * taunts.length)])
         </script>
     </body>
